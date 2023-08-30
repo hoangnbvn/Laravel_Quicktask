@@ -60,22 +60,11 @@ class User extends Authenticatable
 		);
 	}
 
-    /**
-     * Scope the query to only include records where the user is an admin.
-     *
-     * @param  \Illuminate\Database\Eloquent\Builder  $query
-     * @return void
-     */
     public function scopeIsAdmin($query)
     {
         $query->where('is_admin', true);
     }
 
-    /**
-     * The "booted" method of the model
-     *
-     * @return void
-     */
     protected static function booted()
     {
         static::addGlobalScope(new ActiveScope);
