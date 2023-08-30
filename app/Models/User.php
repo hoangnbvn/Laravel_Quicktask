@@ -68,5 +68,5 @@ class User extends Authenticatable
     protected static function booted()
     {
         static::addGlobalScope(new ActiveScope);
-    }
+    }    
 }
