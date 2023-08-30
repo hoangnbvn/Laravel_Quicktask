@@ -32,4 +32,4 @@ Route::put('/tasks/{task}', [TaskController::class, 'update'])->name('tasks.upda
 
 Route::delete('/tasks/{task}', [TaskController::class, 'delete'])->name('tasks.delete');
 
-Route::resource('/users', UserController::class);
+Route::resource('/users', UserController::class)->middleware('auth.admin');
