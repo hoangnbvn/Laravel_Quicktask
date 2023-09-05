@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "template-bower-example": "manhtd-1083/template-bower-example"
+    "template-bower-example": "manhtd-1083/template-bower-example",
+    "light-bootstrap-dashboard": "creativetimofficial/light-bootstrap-dashboard"
   }
 }
