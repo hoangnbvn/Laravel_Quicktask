@@ -6,9 +6,11 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <x-primary-button class="mt-4 mb-4" >
-                {{ __('Create New User') }}
-            </x-primary-button>
+            <x-nav-link :href="route('users.create')">
+                <x-primary-button class="mt-4 mb-4">
+                    {{ __('Create new user') }}
+                </x-primary-button>
+            </x-nav-link>
             <table class="table w-full">
                 <thead>
                     <tr>
@@ -30,9 +32,11 @@
                                     {{ __("Show user") }}
                                 </x-primary-button>
                             </x-nav-link>
-                            <x-primary-button class="mt-4">
-                                {{ __('Edit user') }}
-                            </x-primary-button>
+                            <x-nav-link :href="route('users.edit', ['user' => $user->id])">
+                                <x-primary-button class="mt-4">
+                                    {{ __('Edit user') }}
+                                </x-primary-button>
+                            </x-nav-link>
                             <x-danger-button class="mt-4">
                                 {{ __('Delete user') }}
                             </x-danger-button>

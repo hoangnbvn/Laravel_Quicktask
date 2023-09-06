@@ -10,7 +10,7 @@
             <div class="p-6 text-gray-900 dark:text-gray-100 text-2xl text-bold">
                 {{ __("Task list") }}
             </div>
-            <x-nav-link :href="route('tasks.create')">
+            <x-nav-link :href="route('tasks.create', ['user' => $user->id])">
                 <x-primary-button class="mt-4 mb-4">
                     {{ __("Create task") }}
                 </x-primary-button>
@@ -31,12 +31,11 @@
                         <td class="text-gray-900 dark:text-white text-center">{{ $task->name }}</td>
                         <td class="text-gray-900 dark:text-white text-center break-words w-2/5">{{ $task->content }}</td>
                         <td class="text-gray-900 dark:text-white text-center">
-                            <x-primary-button class="mt-4">
-                                {{ __('Edit task') }}
-                            </x-primary-button>
-                            <x-primary-button class="mt-4">
-                                {{ __('Show task') }}
-                            </x-primary-button>
+                            <x-nav-link :href="route('tasks.edit', ['task' => $task->id])">
+                                <x-primary-button class="mt-4">
+                                    {{ __('Edit task') }}
+                                </x-primary-button>
+                            </x-nav-link>
                             <x-danger-button class="mt-4">
                                 {{ __('Delete task') }}
                             </x-danger-button>

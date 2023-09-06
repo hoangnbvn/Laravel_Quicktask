@@ -75,7 +75,10 @@
     "Delete user": "Xóa",
     "Create New User": "Tạo mới người dùng",
     "Show user": "Xem",
+    "User Edit": "Chỉnh sửa người dùng",
     "Name": "Tên",
+    "First name": "Họ",
+    "Last name": "Tên",
     "Username": "Username",
     "Content": "Nội dung",
     "Action": "Hành động",
@@ -85,5 +88,7 @@
     "Delete task": "Xóa",
     "Show task": "Xem",
     "Task list": "Danh sách nhiệm vụ",
-    "Create task": "Tạo nhiệm vụ"
+    "Create task": "Tạo nhiệm vụ",
+    "Task Edit": "Chỉnh sửa nhiệm vụ",
+    "Create New Task": "Tạo nhiệm vụ mới"
 }
